@@ -44,7 +44,7 @@ nav {
   transition: all 0.25s;
 }
 .nav-link:hover {
-  color: #000000;
+  color: #515d09;
   transform: translateY(-5px);
   transition: all 0.25s;
 }
@@ -67,15 +67,26 @@ nav {
 .footer a {
   color: #ffffff;
   text-decoration: none;
+  transition: all 0.25s;
 }
 .footer a:hover {
-  color: #000000;
+  color: #515d09;
+  transition: all 0.25s;
 }
 .footer__redesSociales a {
   display: block;
   font-size: 1.5rem;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.btn-primary {
+  background: #94aa6a;
+  border-color: #94aa6a;
+}
+.btn-primary:hover {
+  background: #515d09;
+  border-color: #515d09;
 }
 
 /*# sourceMappingURL=styles.css.map */

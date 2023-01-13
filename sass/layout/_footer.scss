@@ -6,9 +6,11 @@
   a {
     color: #ffffff;
     text-decoration: none;
+    transition: all 0.25s;
 
     &:hover {
-      color: #000000;
+      color: $colorPrincipalHover;
+      transition: all 0.25s;
     }
   }
 
