@@ -1,0 +1,30 @@
+main {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
+
+#whatsapp {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  z-index: 10;
+
+  a {
+    img {
+      width: 60px;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
