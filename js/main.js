@@ -70,9 +70,10 @@ const renderFooter = (isIndex) => {
 };
 
 const renderWhatsappIcon = (isIndex) => {
-  let content = `<a href="https://api.whatsapp.com/send/?phone=543518732698&text=Buenos+d%C3%ADas%21&type=phone_number&app_absent=0" target="_blank"><img src="${
+  let content = `<a href="https://api.whatsapp.com/send/?phone=543518732698&text=Hola%20Ver%C3%B3nica%20%C2%BFc%C3%B3mo%20est%C3%A1s?%20Me%20interesa%20tener%20una%20consulta%20con%20vos%20%C2%BFme%20podr%C3%ADas%20dar%20m%C3%A1s%20informaci%C3%B3n%20por%20favor?%20Gracias.&type=phone_number&app_absent=0" target="_blank"><img src="${
     isIndex ? "./img/common/logo-whatsapp.png" : "../img/common/logo-whatsapp.png"
   }" alt="WhatsApp" /></a>`;
+
   document.getElementById("whatsapp").innerHTML = content;
 };
 

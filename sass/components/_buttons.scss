@@ -6,6 +6,12 @@
     background: $colorPrincipalHover;
     border-color: $colorPrincipalHover;
   }
+
+  &:focus {
+    background: $colorPrincipalHover;
+    border-color: $colorPrincipalHover;
+    box-shadow: 0 0 0 0.25rem rgba($colorPrincipal, 0.25);
+  }
 }
 
 .btn-secondary {
@@ -15,5 +21,11 @@
   &:hover {
     background: $colorSecundario;
     border-color: $colorSecundario;
+  }
+
+  &:focus {
+    background: $colorSecundario;
+    border-color: $colorSecundario;
+    box-shadow: 0 0 0 0.25rem rgba($colorTerciario, 0.25);
   }
 }
