@@ -7,3 +7,13 @@
     border-color: $colorPrincipalHover;
   }
 }
+
+.btn-secondary {
+  background: $colorTerciario;
+  border-color: $colorTerciario;
+
+  &:hover {
+    background: $colorSecundario;
+    border-color: $colorSecundario;
+  }
+}

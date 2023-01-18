@@ -1,0 +1,63 @@
+.carousel-indicators {
+  .homeCarousel--dot {
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid $colorTerciario;
+    background: transparent;
+  }
+
+  .active {
+    background: $colorSecundario;
+  }
+}
+
+.contHomeTurno {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+  position: relative;
+  border: 15px solid $colorTerciario;
+  border-radius: 30px;
+  background: #ffffff;
+
+  img {
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+    opacity: 0.6;
+  }
+
+  p {
+    position: absolute;
+    padding: 15px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+  }
+
+  a {
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    font-size: 1.5rem;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contHomeTurno {
+    p {
+      font-size: 1.5rem;
+    }
+
+    a {
+      bottom: -1.75rem;
+      font-size: 1rem;
+    }
+  }
+}
