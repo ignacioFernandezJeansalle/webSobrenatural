@@ -1,0 +1,52 @@
+.container-img__tips {
+  position: relative;
+
+  img {
+    width: 100%;
+    opacity: 0.7;
+  }
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+}
+
+.container-tip {
+  background: linear-gradient(135deg, $colorTerciario, $colorBody);
+  border-radius: 15px;
+  padding: 2px;
+
+  &__content {
+    background: $colorBody;
+    border-radius: 13px;
+    padding: 20px;
+
+    &--head {
+      display: flex;
+
+      img {
+        display: block;
+        width: 40px;
+        height: fit-content;
+      }
+
+      p {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $colorSecundario;
+        margin-left: 10px;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+    }
+
+    &--body {
+      margin-top: 20px;
+    }
+  }
+}

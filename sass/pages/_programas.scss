@@ -2,7 +2,6 @@
   position: relative;
 
   img {
-    //display: block;
     width: 100%;
     transform: scaleX(-1);
     opacity: 0.5;
@@ -11,20 +10,8 @@
   h1 {
     position: absolute;
     top: 50%;
+    left: 20px;
     transform: translateY(-50%);
-    max-width: 550px;
     text-align: center;
-  }
-
-  .text-color-1 {
-    color: $colorSecundario;
-  }
-
-  .text-color-2 {
-    color: #6c585a;
-  }
-
-  .text-color-3 {
-    color: $colorTerciario;
   }
 }

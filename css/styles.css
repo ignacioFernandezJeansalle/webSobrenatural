@@ -40,6 +40,18 @@ main h3 {
   background: #ba3701;
 }
 
+.text-color-1 {
+  color: #f49016;
+}
+
+.text-color-2 {
+  color: #6c585a;
+}
+
+.text-color-3 {
+  color: #ba3701;
+}
+
 nav {
   background: #94aa6a;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -183,6 +195,52 @@ nav {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.container-img__tips {
+  position: relative;
+}
+.container-img__tips img {
+  width: 100%;
+  opacity: 0.7;
+}
+.container-img__tips h1 {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.container-tip {
+  background: linear-gradient(135deg, #ba3701, #f2f2f2);
+  border-radius: 15px;
+  padding: 2px;
+}
+.container-tip__content {
+  background: #f2f2f2;
+  border-radius: 13px;
+  padding: 20px;
+}
+.container-tip__content--head {
+  display: flex;
+}
+.container-tip__content--head img {
+  display: block;
+  width: 40px;
+  height: fit-content;
+}
+.container-tip__content--head p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f49016;
+  margin-left: 10px;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.container-tip__content--body {
+  margin-top: 20px;
+}
+
 .container-img__programas {
   position: relative;
 }
@@ -194,18 +252,9 @@ nav {
 .container-img__programas h1 {
   position: absolute;
   top: 50%;
+  left: 20px;
   transform: translateY(-50%);
-  max-width: 550px;
   text-align: center;
-}
-.container-img__programas .text-color-1 {
-  color: #f49016;
-}
-.container-img__programas .text-color-2 {
-  color: #6c585a;
-}
-.container-img__programas .text-color-3 {
-  color: #ba3701;
 }
 
 .container-contacto img {
