@@ -86,6 +86,99 @@ const renderDates = () => {
   }
 };
 
+const getContentProgram = (idPrograma) => {
+  let content = "";
+  switch (idPrograma) {
+    case 1:
+      content = `
+        <div class="row justify-content-center my-5 flex-column-reverse flex-md-row">
+          <div class="col-md-6 mt-5 mt-md-0">
+            <img
+              src="../img/programas/detalleProgramaCreaccion.jpg"
+              alt="Programa creaccion"
+              class="detailProgramas__img"
+            />
+          </div>
+          <div class="col-md-6">
+            <div class="detailProgramas__content" style="background: rgba(244, 144, 22, 0.62)">
+              <h2>Creacción</h2>
+              <p class="detailProgramas__content--ts">Modalidad presencial / online</p>
+              <p>
+                Es un programa grupal que tiene la finalidad de brindarle a las personas herramientas sencillas que les
+                permite adquirir la capacidad de tomar sus propias decisiones en relación a su alimentación. Se busca
+                propiciar un ambiente de reflexión y descubrimiento en lo referido a la alimentación.
+              </p>
+              <h3>Contenidos</h3>
+              <p>¿Cuál es la importancia de valorar la calidad de nuestra alimentación?</p>
+              <p>Sistema NOVA</p>
+              <p>Hambres</p>
+              <p>Infaltables de una alimentación real</p>
+              <p>Momentos de las comidas</p>
+              <p>¿Cómo armo mi plato?</p>
+              <p class="detailProgramas__content--ts"><b>- Consultar precio y disponibilidad -</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mb-5">
+          <button onclick="goToProgram(0);" class="btn btn-primary">Volver</button>
+        </div>`;
+      break;
+
+    case 2:
+      content = `
+      <div class="row justify-content-center my-5 flex-column-reverse flex-md-row">
+        <div class="col-md-6 mt-5 mt-md-0">
+          <img
+            src="../img/programas/detalleProgramaCaminatasNutrituvas.jpg"
+            alt="Programa caminatas nutritivas"
+            class="detailProgramas__img"
+          />
+        </div>
+        <div class="col-md-6">
+          <div class="detailProgramas__content" style="background: rgba(108, 88, 90, 0.62)">
+            <h2>Caminatas Nutritivas</h2>
+            <p class="detailProgramas__content--ts">Modalidad presencial</p>
+            <p>
+              Te proponemos una experiencia para distenderte, relajarte con una caminata urbana y aprender
+              herramientas que te ayuden a mejorar tu alimentación y a sentirte con más energía.
+            </p>
+            <h3>Contenidos</h3>
+            <p>¿Cuál es la importancia de valorar la calidad de nuestra alimentación?</p>
+            <p>Sistema NOVA</p>
+            <p>Hambres</p>
+            <p>Infaltables de una alimentación real</p>
+            <p>Momentos de las comidas</p>
+            <p>¿Cómo armo mi plato?</p>
+            <p class="detailProgramas__content--ts"><b>- Consultar precio y disponibilidad -</b></p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mb-5">
+        <button onclick="goToProgram(0);" class="btn btn-primary">Volver</button>
+      </div>`;
+      break;
+  }
+
+  return content;
+};
+
+const goToProgram = (idPrograma) => {
+  let content = "";
+  const mainProgramas = document.getElementById("mainProgramas");
+  const detailProgramas = document.getElementById("detailProgramas");
+
+  if (idPrograma != 0) {
+    detailProgramas.innerHTML = getContentProgram(idPrograma);
+    detailProgramas.classList.remove("d-none");
+    mainProgramas.classList.add("d-none");
+  } else {
+    mainProgramas.classList.remove("d-none");
+    detailProgramas.classList.add("d-none");
+  }
+
+  document.documentElement.scrollTop = 0;
+};
+
 /****************************** main ******************************/
 class NavbarLink {
   constructor(label, fileIndex, fileOther) {

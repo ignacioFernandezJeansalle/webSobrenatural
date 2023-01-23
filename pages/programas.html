@@ -41,165 +41,211 @@
       <!-- Link a whatsapp -->
       <section id="whatsapp"></section>
 
-      <!-- Presentacion programas -->
-      <section class="container-img__programas">
-        <img src="../img/programas/ppalProgramasDesktop.jpg" alt="Caratula programas" class="d-none d-md-block" />
-        <img src="../img/programas/ppalProgramasMobile.jpg" alt="Caratula programas" class="d-block d-md-none" />
-        <h1>
-          La <span class="text-color-1">acción</span> siempre supera a la <br /><span class="text-color-2"
-            >perfección</span
-          >, ¿estas listo para<br /><span class="text-color-3">empezar</span>?
-        </h1>
-      </section>
+      <!-- Programas principal (en general) -->
+      <article id="mainProgramas" class="d-block">
+        <!-- Presentacion programas -->
+        <section class="container-img__programas">
+          <img src="../img/programas/ppalProgramasDesktop.jpg" alt="Caratula programas" class="d-none d-md-block" />
+          <img src="../img/programas/ppalProgramasMobile.jpg" alt="Caratula programas" class="d-block d-md-none" />
+          <h1>
+            La <span class="text-color-1">acción</span> siempre supera a la <br /><span class="text-color-2"
+              >perfección</span
+            >, ¿estas listo para<br /><span class="text-color-3">empezar</span>?
+          </h1>
+        </section>
 
-      <!-- Programas -->
-      <section class="container-fluid">
-        <h2 class="my-4 p-5">Cursos</h2>
-        <div class="row justify-content-evenly">
-          <div class="col-12 col-md-3 mb-5 mb-md-0">
-            <div class="card h-100">
-              <img
-                src="../img/programas/programaCreaccionPresencial.jpg"
-                class="card-img-top"
-                alt="Programa Creaccion Presencial"
-              />
-              <div class="card-body">
-                <h5 class="card-title mt-4"><b>CREACCION</b></h5>
-                <p class="card-text mt-4">
-                  Programa grupal que tiene la finalidad de brindarle a las personas herramientas sencillas en cuanto a
-                  la alimentación.
-                </p>
-                <p class="card-text mt-4">Modalidad presencial</p>
-                <p class="card-text mt-4">Consultar precios y disponibilidad.</p>
-                <!-- <a href="#" class="btn btn-primary">+Info</a> -->
-              </div>
+        <!-- Programas -->
+        <section class="container-fluid">
+          <h2 class="my-4 p-5">Cursos</h2>
+          <div class="row justify-content-evenly">
+            <!-- Programa -->
+            <div class="col-12 col-md-3 mb-5 mb-md-0">
+              <button onclick="goToProgram(1);" class="card h-100 linkPrograma">
+                <img
+                  src="../img/programas/programaCreaccionPresencial.jpg"
+                  class="card-img-top"
+                  alt="Programa Creaccion Presencial"
+                />
+                <div class="card-body">
+                  <h5 class="card-title mt-4"><b>CREACCION</b></h5>
+                  <p class="card-text mt-4">
+                    Programa grupal que tiene la finalidad de brindarle a las personas herramientas sencillas en cuanto
+                    a la alimentación.
+                  </p>
+                  <p class="card-text mt-4">Modalidad presencial</p>
+                  <p class="card-text mt-4">Consultar precios y disponibilidad.</p>
+                </div>
+              </button>
             </div>
-          </div>
-          <div class="col-12 col-md-3 mb-5 mb-md-0">
-            <div class="card h-100">
-              <img
-                src="../img/programas/programaCreaccionOnline.jpg"
-                class="card-img-top"
-                alt="Programa Creaccion Online"
-              />
-              <div class="card-body">
-                <h5 class="card-title mt-4"><b>CREACCION</b></h5>
-                <p class="card-text mt-4">
-                  Programa grupal que tiene la finalidad de brindarle a las personas herramientas sencillas en cuanto a
-                  la alimentación.
-                </p>
-                <p class="card-text mt-4">Modalidad online</p>
-                <p class="card-text mt-4">Consultar precios y disponibilidad.</p>
-                <!-- <a href="#" class="btn btn-primary">+Info</a> -->
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-3 mb-5 mb-md-0">
-            <div class="card h-100">
-              <img
-                src="../img/programas/programaCaminatasNutrituvas.jpg"
-                class="card-img-top"
-                alt="Programa Caminatas Nutritivas"
-              />
-              <div class="card-body">
-                <h5 class="card-title mt-4"><b>CAMINATAS NUTRITIVAS</b></h5>
-                <p class="card-text mt-4">
-                  Te proponemos una experiencia diferente para aprender herramientas que te ayuden a mejorar tu
-                  alimentación y a sentirte con más energía.
-                </p>
-                <p class="card-text mt-4">Modalidad presencial</p>
-                <p class="card-text mt-4">Consultar precios y disponibilidad.</p>
-                <!-- <a href="#" class="btn btn-primary">+Info</a> -->
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row px-3 my-5 justify-content-evenly">
-          <div class="col-12 col-md-3 mb-5 mb-md-0">
-            <div class="card h-100">
-              <img src="../img/programas/programaNutrinfancias.jpg" class="card-img-top" alt="Programa Nutrinfancias" />
-              <div class="card-body">
-                <h5 class="card-title mt-4"><b>NUTRINFANCIAS</b></h5>
-                <p class="card-text mt-4">
-                  Te ayudamos a que los niños puedan valorar la alimentación como un pilar fundamental en la promoción
-                  da la salud.
-                </p>
-                <p class="card-text mt-4">Modalidad presencial</p>
-                <p class="card-text mt-4">Consultar precios y disponibilidad.</p>
-                <!-- <a href="#" class="btn btn-primary">+Info</a> -->
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-3 mb-5 mb-md-0">
-            <div class="card h-100">
-              <img src="../img/programas/programaNutrirte.jpg" class="card-img-top" alt="Programa Nutrirte" />
-              <div class="card-body">
-                <h5 class="card-title mt-4"><b>NUTRIRTE</b></h5>
-                <p class="card-text mt-4">
-                  Programa individual para sentirte con mayor vitalidad y menos estrés, este programa es para vos.
-                </p>
-                <p class="card-text mt-4">Modalidad presencial</p>
-                <p class="card-text mt-4">Consultar precios y disponibilidad.</p>
-                <!-- <a href="#" class="btn btn-primary">+Info</a> -->
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-3 mb-5 mb-md-0">
-            <div class="card h-100">
-              <img
-                src="../img/programas/programaNutriendoExperiencias.jpg"
-                class="card-img-top"
-                alt="Programa Nutriendo Experiencias"
-              />
-              <div class="card-body">
-                <h5 class="card-title mt-4"><b>NUTRIENDO EXPERIENCIAS</b></h5>
-                <p class="card-text mt-4">
-                  Te ofrecemos una experiencia que te ayude a redescubrir la alimentación real como un pilar fundamental
-                  para crear salud y bienestar.
-                </p>
-                <p class="card-text mt-4">Modalidad presencial</p>
-                <p class="card-text mt-4">Consultar precios y disponibilidad.</p>
-                <!-- <a href="#" class="btn btn-primary">+Info</a> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- Como son -->
-      <section class="container-fluid bg-sobrenatural-2 pb-5 mb-5">
-        <h2 class="mt-4 p-5 text-light">¿Cómo son?</h2>
-        <div class="row justify-content-evenly">
-          <div class="col-4 col-md-2">
-            <img src="../img/programas/comoSonOnlinePresencial.png" alt="Online/Presencial" class="d-block w-100" />
-            <p class="text-light text-center mt-3">ONLINE<br />PRESENCIAL</p>
+            <!-- Programa -->
+            <div class="col-12 col-md-3 mb-5 mb-md-0">
+              <button onclick="goToProgram(1);" class="card h-100 linkPrograma">
+                <img
+                  src="../img/programas/programaCreaccionOnline.jpg"
+                  class="card-img-top"
+                  alt="Programa Creaccion Online"
+                />
+                <div class="card-body">
+                  <h5 class="card-title mt-4"><b>CREACCION</b></h5>
+                  <p class="card-text mt-4">
+                    Programa grupal que tiene la finalidad de brindarle a las personas herramientas sencillas en cuanto
+                    a la alimentación.
+                  </p>
+                  <p class="card-text mt-4">Modalidad online</p>
+                  <p class="card-text mt-4">Consultar precios y disponibilidad.</p>
+                </div>
+              </button>
+            </div>
+
+            <!-- Programa -->
+            <div class="col-12 col-md-3 mb-5 mb-md-0">
+              <button onclick="goToProgram(2);" class="card h-100 linkPrograma">
+                <img
+                  src="../img/programas/programaCaminatasNutrituvas.jpg"
+                  class="card-img-top"
+                  alt="Programa Caminatas Nutritivas"
+                />
+                <div class="card-body">
+                  <h5 class="card-title mt-4"><b>CAMINATAS NUTRITIVAS</b></h5>
+                  <p class="card-text mt-4">
+                    Te proponemos una experiencia diferente para aprender herramientas que te ayuden a mejorar tu
+                    alimentación y a sentirte con más energía.
+                  </p>
+                  <p class="card-text mt-4">Modalidad presencial</p>
+                  <p class="card-text mt-4">Consultar precios y disponibilidad.</p>
+                </div>
+              </button>
+            </div>
           </div>
-          <div class="col-4 col-md-2">
+
+          <div class="row my-5 justify-content-evenly">
+            <!-- Programa -->
+            <div class="col-12 col-md-3 mb-5 mb-md-0">
+              <button onclick="alert('Programa 4')" class="card h-100 linkPrograma">
+                <img
+                  src="../img/programas/programaNutrinfancias.jpg"
+                  class="card-img-top"
+                  alt="Programa Nutrinfancias"
+                />
+                <div class="card-body">
+                  <h5 class="card-title mt-4"><b>NUTRINFANCIAS</b></h5>
+                  <p class="card-text mt-4">
+                    Te ayudamos a que los niños puedan valorar la alimentación como un pilar fundamental en la promoción
+                    da la salud.
+                  </p>
+                  <p class="card-text mt-4">Modalidad presencial</p>
+                  <p class="card-text mt-4">Consultar precios y disponibilidad.</p>
+                </div>
+              </button>
+            </div>
+
+            <!-- Programa -->
+            <div class="col-12 col-md-3 mb-5 mb-md-0">
+              <button onclick="alert('Programa 5')" class="card h-100 linkPrograma">
+                <img src="../img/programas/programaNutrirte.jpg" class="card-img-top" alt="Programa Nutrirte" />
+                <div class="card-body">
+                  <h5 class="card-title mt-4"><b>NUTRIRTE</b></h5>
+                  <p class="card-text mt-4">
+                    Programa individual para sentirte con mayor vitalidad y menos estrés, este programa es para vos.
+                  </p>
+                  <p class="card-text mt-4">Modalidad presencial</p>
+                  <p class="card-text mt-4">Consultar precios y disponibilidad.</p>
+                </div>
+              </button>
+            </div>
+
+            <!-- Programa -->
+            <div class="col-12 col-md-3 mb-5 mb-md-0">
+              <button onclick="alert('Programa 6')" class="card h-100 linkPrograma">
+                <img
+                  src="../img/programas/programaNutriendoExperiencias.jpg"
+                  class="card-img-top"
+                  alt="Programa Nutriendo Experiencias"
+                />
+                <div class="card-body">
+                  <h5 class="card-title mt-4"><b>NUTRIENDO EXPERIENCIAS</b></h5>
+                  <p class="card-text mt-4">
+                    Te ofrecemos una experiencia que te ayude a redescubrir la alimentación real como un pilar
+                    fundamental para crear salud y bienestar.
+                  </p>
+                  <p class="card-text mt-4">Modalidad presencial</p>
+                  <p class="card-text mt-4">Consultar precios y disponibilidad.</p>
+                </div>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Como son -->
+        <section class="container-fluid bg-sobrenatural-2 pb-5 mb-5">
+          <h2 class="mt-4 p-5 text-light">¿Cómo son?</h2>
+          <div class="row justify-content-evenly">
+            <div class="col-4 col-md-2">
+              <img src="../img/programas/comoSonOnlinePresencial.png" alt="Online/Presencial" class="d-block w-100" />
+              <p class="text-light text-center mt-3">ONLINE<br />PRESENCIAL</p>
+            </div>
+            <div class="col-4 col-md-2">
+              <img
+                src="../img/programas/comoSonEncuentrosSemanales.png"
+                alt="Encuentros semanales"
+                class="d-block w-100"
+              />
+              <p class="text-light text-center mt-3">ENCUENTROS<br />SEMANALES</p>
+            </div>
+            <div class="col-4 col-md-2">
+              <img src="../img/programas/comoSonRecetasTips.png" alt="Recetas y tips" class="d-block w-100" />
+              <p class="text-light text-center mt-3">RECETAS<br />Y TIPS</p>
+            </div>
+            <div class="col-4 col-md-2">
+              <img
+                src="../img/programas/comoSonExperienciasMotivadoras.png"
+                alt="Experiencias motivadoras"
+                class="d-block w-100"
+              />
+              <p class="text-light text-center mt-3">EXPERIENCIAS<br />MOTIVADORAS</p>
+            </div>
+            <div class="col-4 col-md-2">
+              <img src="../img/programas/comoSonGrupoWhatsapp.png" alt="Grupo whatsapp" class="d-block w-100" />
+              <p class="text-light text-center mt-3">GRUPO DE<br />WHATSAPP</p>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <!-- Programas detallados -->
+      <article id="detailProgramas" class="d-none">
+        <!-- <div class="row justify-content-center my-5 flex-column-reverse flex-md-row">
+          <div class="col-md-6 mt-5 mt-md-0">
             <img
-              src="../img/programas/comoSonEncuentrosSemanales.png"
-              alt="Encuentros semanales"
-              class="d-block w-100"
+              src="../img/programas/detalleProgramaCaminatasNutrituvas.jpg"
+              alt="Programa caminatas nutritivas"
+              class="detailProgramas__img"
             />
-            <p class="text-light text-center mt-3">ENCUENTROS<br />SEMANALES</p>
           </div>
-          <div class="col-4 col-md-2">
-            <img src="../img/programas/comoSonRecetasTips.png" alt="Recetas y tips" class="d-block w-100" />
-            <p class="text-light text-center mt-3">RECETAS<br />Y TIPS</p>
-          </div>
-          <div class="col-4 col-md-2">
-            <img
-              src="../img/programas/comoSonExperienciasMotivadoras.png"
-              alt="Experiencias motivadoras"
-              class="d-block w-100"
-            />
-            <p class="text-light text-center mt-3">EXPERIENCIAS<br />MOTIVADORAS</p>
-          </div>
-          <div class="col-4 col-md-2">
-            <img src="../img/programas/comoSonGrupoWhatsapp.png" alt="Grupo whatsapp" class="d-block w-100" />
-            <p class="text-light text-center mt-3">GRUPO DE<br />WHATSAPP</p>
+          <div class="col-md-6">
+            <div class="detailProgramas__content" style="background: rgba(108, 88, 90, 0.62)">
+              <h2>Caminatas Nutritivas</h2>
+              <p class="detailProgramas__content--ts">Modalidad presencial</p>
+              <p>
+                Te proponemos una experiencia para distenderte, relajarte con una caminata urbana y aprender
+                herramientas que te ayuden a mejorar tu alimentación y a sentirte con más energía.
+              </p>
+              <h3>Contenidos</h3>
+              <p>¿Cuál es la importancia de valorar la calidad de nuestra alimentación?</p>
+              <p>Sistema NOVA</p>
+              <p>Hambres</p>
+              <p>Infaltables de una alimentación real</p>
+              <p>Momentos de las comidas</p>
+              <p>¿Cómo armo mi plato?</p>
+              <p class="detailProgramas__content--ts"><b>- Consultar precio y disponibilidad -</b></p>
+            </div>
           </div>
         </div>
-      </section>
+        <div class="d-flex justify-content-center mb-5">
+          <button onclick="goToProgram(0);" class="btn btn-primary">Volver</button>
+        </div> -->
+      </article>
     </main>
 
     <footer></footer>
