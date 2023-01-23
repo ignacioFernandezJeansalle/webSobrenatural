@@ -87,29 +87,61 @@ nav {
   background: #94aa6a;
   min-height: 300px;
   color: #ffffff;
+  display: flex;
 }
-.footer img {
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer__logo img {
   display: block;
-  width: 200px;
+  max-width: 200px;
   padding: 20px;
-  margin: auto;
 }
-.footer a {
-  color: #ffffff;
-  text-decoration: none;
-  transition: all 0.25s;
+.footer__contacto {
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: 1rem;
 }
-.footer a:hover {
-  color: #515d09;
-  transition: all 0.25s;
+.footer__redesSociales {
+  margin-top: 3rem;
+  margin-right: 2rem;
 }
 .footer__redesSociales a {
-  display: block;
-  font-size: 1.5rem;
-  padding-left: 10px;
+  color: #6c585a;
+  text-decoration: none;
+  transition: all 0.25s;
+  font-size: 2rem;
+  transition: all 0.25s;
   padding-right: 10px;
 }
+.footer__redesSociales a:hover {
+  color: #f2f2f2;
+  transition: all 0.25s;
+}
 
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer__logo {
+    flex-direction: row;
+  }
+  .footer__contacto {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .footer__redesSociales {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+}
 .btn-primary {
   background: #94aa6a;
   border-color: #94aa6a;
@@ -302,10 +334,14 @@ nav {
 }
 
 .container-contacto img {
-  max-width: 431px;
+  display: block;
+  width: 100%;
+  max-width: 335px;
+  border-radius: 15px;
 }
 .container-contacto__form {
-  max-width: 431px;
+  max-width: 450px;
+  border-radius: 15px;
   margin: auto;
 }
 

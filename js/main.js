@@ -41,29 +41,29 @@ const renderNavbar = (isIndex) => {
 
 const renderFooter = (isIndex) => {
   let content = `
-      <div class="row pt-3">
-        <div class="col-12 col-md-3">
+        <div class="footer__logo">
           <img src="${isIndex ? "./img/common/logoFooterWhite.png" : "../img/common/logoFooterWhite.png"}" alt="Logo" />
         </div>
         <hr class="mt-3 d-md-none" />
-        <div class="col-12 col-md-6 text-center text-md-end">
-          <h4 class="mt-2 mb-4">Contacto</h4>
-          <p><i class="bi bi-geo-alt me-3"></i>Córdoba, Argentina</p>
-          <p><i class="bi bi-phone me-3"></i>+54-351-873-2698</p>
-          <p><i class="bi bi-envelope me-3"></i>productos.sobrenatural@gmail.com</p>
+        <div class="footer__contacto">
+          <h4>Contacto</h4>
+          <p><i class="bi bi-geo-alt me-3 text-color-2"></i>Córdoba, Argentina</p>
+          <p><i class="bi bi-phone me-3 text-color-2"></i>+54-351-873-2698</p>
+          <p><i class="bi bi-envelope me-3 text-color-2"></i>productos.sobrenatural@gmail.com</p>
         </div>
         <hr class="mt-3 d-md-none" />
-        <div
-          class="col-12 col-md-3 mt-2 mb-4 d-flex justify-content-md-end justify-content-center flex-wrap footer__redesSociales"
-        >
+        <div class="footer__redesSociales">
+          <h4>Redes sociales</h4>
+          <a
+            href="https://www.facebook.com/profile.php?id=100066952421668&mibextid=ZbWKwL"
+            target="_blank"
+            aria-label="Facebook"
+            ><i class="bi bi-facebook"></i
+          ></a>
           <a href="https://www.instagram.com/sobrenatural_diet/" target="_blank" aria-label="Instagram"
             ><i class="bi bi-instagram"></i
           ></a>
-          <a href="https://www.facebook.com/profile.php?id=100066952421668&mibextid=ZbWKwL" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-          <!-- <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
-          <a href="#" aria-label="Youtube"><i class="bi bi-youtube"></i></a> -->
-        </div>
-      </div>`;
+        </div>`;
 
   document.getElementsByTagName("footer")[0].className = "container-fluid footer";
   document.getElementsByTagName("footer")[0].innerHTML = content;

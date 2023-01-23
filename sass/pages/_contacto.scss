@@ -1,10 +1,14 @@
 .container-contacto {
   img {
-    max-width: 431px;
+    display: block;
+    width: 100%;
+    max-width: 335px;
+    border-radius: 15px;
   }
 
   &__form {
-    max-width: 431px;
+    max-width: 450px;
+    border-radius: 15px;
     margin: auto;
   }
 }
