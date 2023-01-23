@@ -16,18 +16,12 @@
 }
 
 .container-tip {
-  background: linear-gradient(135deg, $colorTerciario, $colorBody);
-  border-radius: 15px;
-  padding: 2px;
-
   &__content {
     background: $colorBody;
     border-radius: 13px;
     padding: 20px;
 
     &--head {
-      display: flex;
-
       img {
         display: block;
         width: 40px;
@@ -35,18 +29,37 @@
       }
 
       p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: bold;
-        color: $colorSecundario;
-        margin-left: 10px;
-        margin-right: auto;
-        margin-top: auto;
-        margin-bottom: auto;
+        text-align: center;
+        margin-top: 1rem;
       }
     }
 
     &--body {
-      margin-top: 20px;
+      text-align: justify;
+      color: #555555;
+    }
+  }
+}
+
+.container-testimonio {
+  height: 100%;
+  background: rgba(#ffffff, 0.35);
+  padding: 1rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &--person {
+    display: flex;
+
+    img {
+      display: block;
+      width: 5rem;
+      border-radius: 50%;
+      border: 2px solid $colorTerciario;
     }
   }
 }

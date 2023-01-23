@@ -52,6 +52,10 @@ main h3 {
   color: #ba3701;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 nav {
   background: #94aa6a;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -210,18 +214,10 @@ nav {
   text-align: center;
 }
 
-.container-tip {
-  background: linear-gradient(135deg, #ba3701, #f2f2f2);
-  border-radius: 15px;
-  padding: 2px;
-}
 .container-tip__content {
   background: #f2f2f2;
   border-radius: 13px;
   padding: 20px;
-}
-.container-tip__content--head {
-  display: flex;
 }
 .container-tip__content--head img {
   display: block;
@@ -229,16 +225,33 @@ nav {
   height: fit-content;
 }
 .container-tip__content--head p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  color: #f49016;
-  margin-left: 10px;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
+  text-align: center;
+  margin-top: 1rem;
 }
 .container-tip__content--body {
-  margin-top: 20px;
+  text-align: justify;
+  color: #555555;
+}
+
+.container-testimonio {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.35);
+  padding: 1rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container-testimonio--person {
+  display: flex;
+}
+.container-testimonio--person img {
+  display: block;
+  width: 5rem;
+  border-radius: 50%;
+  border: 2px solid #ba3701;
 }
 
 .container-img__programas {
