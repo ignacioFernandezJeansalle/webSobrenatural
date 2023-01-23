@@ -126,23 +126,88 @@ const getContentProgram = (idPrograma) => {
 
     case 2:
       content = `
+        <div class="row justify-content-center my-5 flex-column-reverse flex-md-row">
+          <div class="col-md-6 mt-5 mt-md-0">
+            <img
+              src="../img/programas/detalleProgramaCaminatasNutrituvas.jpg"
+              alt="Programa caminatas nutritivas"
+              class="detailProgramas__img"
+            />
+          </div>
+          <div class="col-md-6">
+            <div class="detailProgramas__content" style="background: rgba(108, 88, 90, 0.62)">
+              <h2>Caminatas Nutritivas</h2>
+              <p class="detailProgramas__content--ts">Modalidad presencial</p>
+              <p>
+                Te proponemos una experiencia para distenderte, relajarte con una caminata urbana y aprender
+                herramientas que te ayuden a mejorar tu alimentación y a sentirte con más energía.
+              </p>
+              <h3>Contenidos</h3>
+              <p>¿Cuál es la importancia de valorar la calidad de nuestra alimentación?</p>
+              <p>Sistema NOVA</p>
+              <p>Hambres</p>
+              <p>Infaltables de una alimentación real</p>
+              <p>Momentos de las comidas</p>
+              <p>¿Cómo armo mi plato?</p>
+              <p class="detailProgramas__content--ts"><b>- Consultar precio y disponibilidad -</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mb-5">
+          <button onclick="goToProgram(0);" class="btn btn-primary">Volver</button>
+        </div>`;
+      break;
+
+    case 3:
+      content = `
+        <div class="row justify-content-center my-5 flex-column-reverse flex-md-row">
+          <div class="col-md-6 mt-5 mt-md-0">
+            <img
+              src="../img/programas/detalleProgramaNutrinfancias.jpg"
+              alt="Programa nutrinfancias"
+              class="detailProgramas__img"
+            />
+          </div>
+          <div class="col-md-6">
+            <div class="detailProgramas__content" style="background: rgba(148, 170, 106, 0.62)">
+              <h2>Nutrinfancias</h2>
+              <p class="detailProgramas__content--ts">Modalidad presencial</p>
+              <p>
+                Los primeros años de vida son los más importantes para establecer y fomentar una alimentación real y una
+                relación sana con la comida es por ese motivo que te proponemos ayudarte brindando talleres de educación
+                alimentaria en tu escuela o club deportivo.
+              </p>
+              <p>
+                Te ayudamos a que los niños puedan valorar la alimentación como un piular fundamental en la promoción da
+                la salud.
+              </p>
+              <p class="detailProgramas__content--ts"><b>- Consultar precio y disponibilidad -</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mb-5">
+          <button onclick="goToProgram(0);" class="btn btn-primary">Volver</button>
+        </div>`;
+      break;
+
+    case 4:
+      content = `
       <div class="row justify-content-center my-5 flex-column-reverse flex-md-row">
         <div class="col-md-6 mt-5 mt-md-0">
           <img
-            src="../img/programas/detalleProgramaCaminatasNutrituvas.jpg"
-            alt="Programa caminatas nutritivas"
+            src="../img/programas/detalleProgramaNutrirte.jpg"
+            alt="Programa nutrirte"
             class="detailProgramas__img"
           />
         </div>
         <div class="col-md-6">
-          <div class="detailProgramas__content" style="background: rgba(108, 88, 90, 0.62)">
-            <h2>Caminatas Nutritivas</h2>
-            <p class="detailProgramas__content--ts">Modalidad presencial</p>
-            <p>
-              Te proponemos una experiencia para distenderte, relajarte con una caminata urbana y aprender
-              herramientas que te ayuden a mejorar tu alimentación y a sentirte con más energía.
-            </p>
+          <div class="detailProgramas__content" style="background: rgba(186, 55, 1, 0.62)">
+            <h2>Nutrirte</h2>
+            <p class="detailProgramas__content--ts">Modalidad presencial individual</p>
+            <p>Si tu objetivo es sentirte con mayor vitalidad y menos estrés, este programa es para vos.</p>
+            <p>Te acompañamos en tu camino de mejora en la alimentación, vos podes lograr excelentes resultados.</p>
             <h3>Contenidos</h3>
+            <p>Te acompañamos con sesiones teórico-prácticas para avanzar en tu rpoceso.</p>
             <p>¿Cuál es la importancia de valorar la calidad de nuestra alimentación?</p>
             <p>Sistema NOVA</p>
             <p>Hambres</p>
@@ -156,6 +221,34 @@ const getContentProgram = (idPrograma) => {
       <div class="d-flex justify-content-center mb-5">
         <button onclick="goToProgram(0);" class="btn btn-primary">Volver</button>
       </div>`;
+      break;
+
+    case 5:
+      content = `
+        <div class="row justify-content-center my-5 flex-column-reverse flex-md-row">
+          <div class="col-md-6 mt-5 mt-md-0">
+            <img
+              src="../img/programas/detalleProgramaNutriendoExperiencias.jpg"
+              alt="Programa nutriendo experiencias"
+              class="detailProgramas__img"
+            />
+          </div>
+          <div class="col-md-6">
+            <div class="detailProgramas__content" style="background: rgba(81, 93, 9, 0.6)">
+              <h2>Nutriendo Experiencias</h2>
+              <p class="detailProgramas__content--ts">Modalidad presencial</p>
+              <p>Es hora de que la nutrición salga del consultorio y el hospital.</p>
+              <p>
+                Te ofrecemos una experiencia que te ayude a redescubrir la alimentación real como un pilar fundamental
+                para crear salud y bienestar.
+              </p>
+              <p class="detailProgramas__content--ts"><b>- Consultar precio y disponibilidad -</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mb-5">
+          <button onclick="goToProgram(0);" class="btn btn-primary">Volver</button>
+        </div>`;
       break;
   }
 
@@ -171,12 +264,12 @@ const goToProgram = (idPrograma) => {
     detailProgramas.innerHTML = getContentProgram(idPrograma);
     detailProgramas.classList.remove("d-none");
     mainProgramas.classList.add("d-none");
+    document.documentElement.scrollTop = 0;
   } else {
     mainProgramas.classList.remove("d-none");
     detailProgramas.classList.add("d-none");
+    document.documentElement.scrollTop = 450;
   }
-
-  document.documentElement.scrollTop = 0;
 };
 
 /****************************** main ******************************/
