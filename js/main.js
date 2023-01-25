@@ -129,7 +129,7 @@ const getContentProgram = (idPrograma) => {
         <div class="row justify-content-center my-5 flex-column-reverse flex-md-row">
           <div class="col-md-6 mt-5 mt-md-0">
             <img
-              src="../img/programas/detalleProgramaCaminatasNutrituvas.jpg"
+              src="../img/programas/detalleProgramaCaminatasNutritivas.jpg"
               alt="Programa caminatas nutritivas"
               class="detailProgramas__img"
             />
