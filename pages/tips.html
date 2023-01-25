@@ -33,6 +33,7 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header></header>
@@ -161,7 +162,7 @@
       <!-- Testimonios -->
       <section class="container-fluid bg-sobrenatural-2 pb-5 mb-5">
         <h2 class="mt-4 p-5 text-light">Testimonios</h2>
-        <div class="row justify-content-evenly px-5">
+        <div class="row justify-content-evenly px-5" data-aos="fade-left">
           <div class="col-12 col-md-4 mb-5">
             <div class="container-testimonio">
               <p class="text-center mt-3">
@@ -213,5 +214,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

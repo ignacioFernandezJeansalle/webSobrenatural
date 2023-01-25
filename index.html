@@ -33,6 +33,7 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header id="index"></header>
@@ -115,7 +116,7 @@
         </h2>
         <div class="row py-5 px-3 bg-sobrenatural-2">
           <div class="col-6 col-md-3 mb-5 mb-md-0">
-            <div class="card h-100">
+            <div class="card h-100" data-aos="fade-right">
               <img
                 src="./img/programas/programaCreaccionPresencial.jpg"
                 class="card-img-top"
@@ -129,7 +130,7 @@
             </div>
           </div>
           <div class="col-6 col-md-3 mb-5 mb-md-0">
-            <div class="card h-100">
+            <div class="card h-100" data-aos="fade-up">
               <img
                 src="./img/programas/programaCreaccionOnline.jpg"
                 class="card-img-top"
@@ -143,7 +144,7 @@
             </div>
           </div>
           <div class="col-6 col-md-3 mb-5 mb-md-0">
-            <div class="card h-100">
+            <div class="card h-100" data-aos="fade-up">
               <img
                 src="./img/programas/programaCaminatasNutritivas.jpg"
                 class="card-img-top"
@@ -157,7 +158,7 @@
             </div>
           </div>
           <div class="col-6 col-md-3 mb-5 mb-md-0">
-            <div class="card h-100">
+            <div class="card h-100" data-aos="fade-left">
               <img src="./img/programas/programaNutrinfancias.jpg" class="card-img-top" alt="Programa Nutrinfancias" />
               <div class="card-body">
                 <h5 class="card-title text-center text-color-2">Nutrinfancias</h5>
@@ -174,7 +175,7 @@
 
       <!-- Agendá tu turno -->
       <section class="container my-5 py-5">
-        <div class="contHomeTurno">
+        <div class="contHomeTurno" data-aos="flip-left">
           <img src="./img/homeTurno/homeTurnoBg.jpeg" alt="Imagen generica" />
           <p>Para iniciar tu cambio, sólo tienes que agendar tu consulta</p>
           <a class="btn btn-secondary" href="./pages/contacto.html">Agendá tu consulta</a>
@@ -191,5 +192,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

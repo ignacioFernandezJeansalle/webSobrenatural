@@ -33,6 +33,7 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header></header>
@@ -46,7 +47,7 @@
         <h1 class="text-center mb-5">VERO ANDRADA</h1>
         <div class="row justify-content-center">
           <div class="col-12 col-md-5 col-lg-5 d-flex justify-content-center py-5">
-            <div class="container-img__quien-soy">
+            <div class="container-img__quien-soy" data-aos="zoom-in">
               <img src="../img/quienSoy/Veronica Andrada bgf2f2f2.png" alt="Licenciada Verónica Andrada" />
             </div>
           </div>
@@ -90,5 +91,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

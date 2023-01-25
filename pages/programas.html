@@ -33,6 +33,7 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header></header>
@@ -181,7 +182,7 @@
         <!-- Como son -->
         <section class="container-fluid bg-sobrenatural-2 pb-5 mb-5">
           <h2 class="mt-4 p-5 text-light">¿Cómo son?</h2>
-          <div class="row justify-content-evenly">
+          <div class="row justify-content-evenly" data-aos="fade-left">
             <div class="col-4 col-md-2">
               <img src="../img/programas/comoSonOnlinePresencial.png" alt="Online/Presencial" class="d-block w-100" />
               <p class="text-light text-center mt-3">ONLINE<br />PRESENCIAL</p>
@@ -227,5 +228,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

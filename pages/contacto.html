@@ -33,6 +33,7 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header></header>
@@ -43,7 +44,7 @@
 
       <!-- Contacto -->
       <section class="container-fluid container-contacto">
-        <div class="row flex-column-reverse flex-md-row">
+        <div class="row flex-column-reverse flex-md-row" data-aos="zoom-out-down">
           <div class="col-12 col-md-6 py-5 d-flex justify-content-center">
             <img src="../img/contacto/imagenContacto.jpeg" alt="Verónica Andrada" />
           </div>
@@ -98,5 +99,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
