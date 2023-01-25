@@ -303,6 +303,7 @@ nav {
 }
 
 .linkPrograma {
+  color: #000000;
   transition: all 0.25s;
 }
 .linkPrograma:hover {
