@@ -51,25 +51,25 @@
           <div class="col-12 col-md-6 py-5">
             <!-- Formulario -->
             <div class="row p-3 bg-sobrenatural-2 container-contacto__form">
-              <form>
+              <form action="../php/form.php" method="post">
                 <div class="mb-2">
                   <label for="iNombreApellido" class="form-label">Nombre y apellido</label>
-                  <input type="text" class="form-control" id="iNombreApellido" />
+                  <input type="text" class="form-control" id="iNombreApellido" name="iNombreApellido" required />
                 </div>
                 <div class="mb-2">
                   <label for="iEmail" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="iEmail" />
+                  <input type="email" class="form-control" id="iEmail" name="iEmail" required />
                 </div>
                 <div class="mb-2">
                   <label for="iTelefono" class="form-label">Teléfono</label>
-                  <input type="text" class="form-control" id="iTelefono" />
+                  <input type="text" class="form-control" id="iTelefono" name="iTelefono" required />
                 </div>
                 <div class="mb-2">
                   <label for="taMensaje" class="form-label">Mensaje</label>
-                  <textarea class="form-control" id="taMensaje" rows="2"></textarea>
+                  <textarea class="form-control" id="taMensaje" name="taMensaje" required rows="2"></textarea>
                 </div>
                 <div class="d-flex justify-content-center">
-                  <button type="submit" class="btn btn-primary">Enviar</button>
+                  <input class="btn btn-primary" type="submit" value="Enviar" />
                 </div>
               </form>
             </div>
