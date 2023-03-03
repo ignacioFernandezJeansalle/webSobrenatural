@@ -1,6 +1,6 @@
 <?php
 
-	$destino  = "ignaciofj@gmail.com";
+	$destino  = "productos.sobrenatural@gmail.com";
 
 	$nombre   = $_POST["iNombreApellido"];
 	$correo   = $_POST["iEmail"];
